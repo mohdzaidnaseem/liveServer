@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Data Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.container{
+    width:380px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+h2{
+    text-align:center;
+    color:#2575fc;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2575fc;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#174db8;
+    transform:scale(1.03);
+}
+
+.footer{
+    margin-top:15px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form action="/submit" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+
+        <input type="email" name="email" placeholder="Enter Email" required>
+
+        <input type="number" name="mobile" placeholder="Enter Mobile Number" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="footer">
+        Live Data Collection
+    </div>
+</div>
+
+</body>
+</html>
